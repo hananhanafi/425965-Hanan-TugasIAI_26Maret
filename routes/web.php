@@ -23,3 +23,5 @@ $router->put('changepassword/{id}','UserController@changePassword');
 
 $router->get('gits','GitController@index');
 $router->post('git','GitController@store');
+
+$router->get('prime','TaskController@index');
