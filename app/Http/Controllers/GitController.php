@@ -10,7 +10,7 @@ use Laravel\Lumen\Routing\Controller as BaseController;
 class GitController extends BaseController
 {
     public function index(){
-        // $result = Git::all();
+        $result = Git::all();
         return response()->json($result);
     }
     public function store(Request $request){
